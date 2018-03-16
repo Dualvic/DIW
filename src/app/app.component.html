@@ -1,0 +1,5 @@
+<div class="container-fluid" id="bodyContainer">
+  <app-header></app-header>
+  <app-body *ngIf="selectedItem == 'pelis'"></app-body>
+  <app-cinema *ngIf="selectedItem == 'cines'"></app-cinema>
+</div>

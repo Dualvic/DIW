@@ -1,0 +1,8 @@
+<div class="row" *ngFor="let pelicula of peliculas">
+  <div [style.background]="'url(' + pelicula.img + ')'" class="card bg-dark text-white">
+    <div class="content card-img-overlay">
+      <h2>{{pelicula.titulo}}</h2>
+      <p style="font-size: 3vmax" class="card-text">{{pelicula.descripcion}}</p>
+    </div>
+  </div>
+</div>

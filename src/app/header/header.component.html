@@ -1,0 +1,41 @@
+  <div id="header" class="row header">
+    <div class="col-xs-2 top-left">
+      <a (click)="openMenu()" href="#">
+        <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="col-xs-8 top-middle">
+      <a  href="#">
+        <p>Cinefy</p>
+      </a>
+    </div>
+    <div class="col-xs-2 top-right">
+      <a href="#">
+        <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div id="filter-scroll">
+      <div><span (click)="selectedItem('cines')">Cines</span></div>
+      <div><span (click)="selectedItem('pelis')">Peliculas</span></div>
+      <div><span>Estrenos</span></div>
+      <div><span>Entradas</span></div>
+      <div><span>Opiniones</span></div>
+    </div>
+  </div>
+
+
+  <div (focusout)="closeMenu()"
+       class="sidenav" id="slidebanner"
+       [ngClass]="activeSideNav ? 'activeSideNav':'sidenav'">
+    <div id="profile"><img src="assets/img/profile.png"></div>
+    <a href="javascript:void(0)" class="closebtn" (click)="closeMenu()">&times;</a>
+    <a href="#">Perfil</a>
+    <a href="#">Mis compras</a>
+    <a href="#">Opciones </a>
+    <br>
+    <br>
+    <a href="#">Acerca de: </a>
+  </div>
+

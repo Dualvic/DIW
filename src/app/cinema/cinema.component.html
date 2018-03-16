@@ -1,0 +1,9 @@
+<div class="row" *ngFor="let cinema of cinemas">
+  <div [style.background]="'url(' + cinema.img + ')'" class="card bg-dark text-white">
+    <div class="content card-img-overlay" style="color: white">
+      <h2>{{cinema.titulo}}</h2>
+      <p style="font-size: 3vmax" class="card-text">{{cinema.descripcion}}</p>
+    </div>
+  </div>
+</div>
+

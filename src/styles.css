@@ -1,0 +1,122 @@
+.header{
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#filter-scroll {
+  width: inherit;
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+#filter-scroll::-webkit-scrollbar {
+  display: none;
+}
+#filter-scroll div {
+  display: block;
+}
+#filter-scroll div span {
+  font-weight: bold;
+  margin: 5px;
+  padding: 7px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  background-color: #2A1A1F  ;
+  color: white;
+}
+p {
+  font-size: 33px;
+}
+
+/*********************************************************************************************************/
+
+.card {
+  margin: 1%;
+  height: 25%;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  text-align: left;
+}
+#cines {
+  background-image: url("assets/img/cine.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  /*  background-size:100% auto;*/
+}
+.content {
+  text-align: left !important;
+  margin-left: 5%;
+  margin-right: 15%;
+  color: black;
+}
+#peliculas {
+  background: url("assets/img/pelicula.jpg") no-repeat center;
+  background-size:58% auto;
+}
+
+/*********************************************************************************************************/
+
+.activeSideNav {
+  width: 80% !important;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#bodyContainer {
+  background-color: #A54F4F;
+}
+
+#slidebanner {
+  text-align: center;
+  background: rgba(161, 161, 161, 1) url("assets/img/slide-banner.png");
+}
+
+#profile {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#profile img {
+  width: 150px;
+}
